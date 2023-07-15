@@ -16,10 +16,10 @@ export default function Home() {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center">
         {!fact.isFetching && fact.data ? <FactCard fact={fact.data} /> : <LoadingFactCard />}
-        <Button className="mt-10 transition-all" onClick={() => fact.refetch()} disabled={!fact.isInitialLoading && fact.isFetching}>
+        <Button className="mt-10 transition-all" onClick={() => void fact.refetch()} disabled={!fact.isInitialLoading && fact.isFetching}>
           {<RotateCw className={`mr-2 h-4 w-4 ${!fact.isInitialLoading && fact.isFetching ?  'animate-spin': '' }`} /> }
           Siguiente dato
-          </Button>
+        </Button>
       </main>
     </>
   );
