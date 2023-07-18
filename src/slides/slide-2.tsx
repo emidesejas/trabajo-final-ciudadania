@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 
-export default function Slide1() {
+export default function Slide2() {
   return (
     <motion.div 
       initial={{ opacity: 0 }}
