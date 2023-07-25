@@ -50,6 +50,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "white-ish": "rgb(232,240,246)"
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -69,6 +70,9 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      backgroundImage: {
+        "colorful_background": "url('/colorful_background.jpg')",
       },
     },
   },

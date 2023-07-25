@@ -28,10 +28,6 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
-    console.log(slide);
-  }, [slide]);
-
   const prevSlide = () => {
     if (slide === 0) {
       setSlide(TOTAL_SLIDES - 1);
@@ -42,10 +38,6 @@ export default function Home() {
   
   return (
     <>
-      <Head>
-        <title>Trabajo final de Ciudadanía - Grupo 40</title>
-        <link rel="icon" href="/sticker.png" />
-      </Head>
       <main className="h-screen w-screen flex justify-center items-center">
         <AnimatePresence>
           {slide === 0 && <Slide1 />}
