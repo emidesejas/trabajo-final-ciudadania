@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 export default function Slide6() {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -12,7 +12,7 @@ export default function Slide6() {
         Exactitud de la información
       </h1>
       <motion.p className="text-4xl mt-7 text-center">
-        Muchas veces Chat GPT, en su afán de mantener una experiencia de conversación natural para el usuario, puede utilizar información no verificada o directamente incorrecta, lo que puede desencadenar malentendidos o toma de decisiones incorrectas para los usuarios que pueden resultar en daños, incluso físicos.
+        Chat GPT puede utilizar información no verificada o directamente incorrecta, esto puede llevar a malentendidos o toma de decisiones incorrectas.
       </motion.p>
     </motion.div>
   )
