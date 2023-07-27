@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 export default function Slide3() {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -12,7 +12,7 @@ export default function Slide3() {
         ¿Por qué se hizo tan popular?
       </h1>
       <motion.p className="text-4xl mt-7 text-center">
-        Una de las principales razones de la popularidad de Chat GPT es que simplemente hace un muy buen trabajo en responder preguntas de la vida cotidiana, manteniendo coherencia y buena ortografía. Este motivo hizo que muchas personas se sintieran cómodas utilizando la herramienta y por tanto potenciando su rápida adopción.
+        Hace un muy buen trabajo en responder preguntas de la vida cotidiana de forma coherente, por lo que muchas personas se sienten cómodas utilizando la herramienta.
       </motion.p>
     </motion.div>
   )

@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 export default function Slide7() {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -12,7 +12,7 @@ export default function Slide7() {
         Sesgos
       </h1>
       <motion.p className="text-4xl mt-7 text-center">
-        Chat GPT y otros modelos de lenguaje similares dependen fuertemente del conjunto de datos con el que fue entrenado. Si este conjunto de datos posee algún tipo de sesgo en algún ámbito, el texto generado a partir del mismo también lo tendrá. Esto es peligroso porque muchos usuarios asumen la imparcialidad total de este tipo de modelos, mientras que siguen dependiendo fuertemente de la organización que realizó su entrenamiento y está encargada de actualizarlo.
+        Si el conjunto de datos con el que fue entrenado posee algún tipo de sesgo en algún ámbito, el texto generado a partir del mismo también lo tendrá. Por esto no se debería asumir la imparcialidad total de sus respuestas.
       </motion.p>
     </motion.div>
   )

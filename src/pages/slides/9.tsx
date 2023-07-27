@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 export default function Slide9() {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -12,7 +12,7 @@ export default function Slide9() {
         Uso indebido
       </h1>
       <motion.p className="text-4xl mt-7 text-center">
-      Dada la gran capacidad de generar respuestas coherentes para un contexto dado, este tipo de modelos puede ser usado fácilmente para generar contenido falso o engañoso, brindándole nuevas herramientas a personas mal intencionadas.
+        Dada la gran capacidad de generar respuestas coherentes para un contexto dado, Chat GPT puede ser usado fácilmente para generar contenido falso o engañoso, brindándole nuevas herramientas a personas mal intencionadas.
       </motion.p>
     </motion.div>
   )

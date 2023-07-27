@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 export default function Slide4() {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -12,8 +12,8 @@ export default function Slide4() {
         ¿Qué riesgos implica su uso?
       </h1>
       <motion.p className="text-4xl mt-7 text-center">
-      El funcionamiento interno de Chat GPT no implica ningún tipo de razonamiento lógico o inteligente en las respuestas brindadas. Si bien en algunas se pueden observar razonamientos y conclusiones que denotan inteligencia, lo cierto es que Chat GPT fue entrenado para predecir la siguiente palabra más acorde al contexto y la pregunta realizada por el usuario.
-      Esta naturaleza fría y poco humana resulta en una variedad de riesgos que implican usar esta herramienta. Los riesgos se califican en las siguientes categorías:
+        Chat GPT no razona lógicamente ni tiene inteligencia, sino que predice la siguiente palabra más acorde al contexto y a la pregunta realizada por el usuario.
+        Esto resulta en distintos riesgos que implican usar esta herramienta:
       </motion.p>
     </motion.div>
   )
