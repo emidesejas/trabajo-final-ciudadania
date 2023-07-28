@@ -1,6 +1,6 @@
-import { AnimatePresence } from "framer-motion"
-import Head from "next/head"
-import { useEffect, useState } from "react"
+import { AnimatePresence } from "framer-motion";
+import Head from "next/head";
+import { useEffect, useState } from "react";
 
 import { Button } from "~/components/ui/button";
 import Slide1 from "~/slides/slide-1";
@@ -17,7 +17,6 @@ import Slide10 from "~/slides/slide-10";
 const TOTAL_SLIDES = 10;
 
 export default function Home() {
-
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
@@ -35,10 +34,10 @@ export default function Home() {
       setSlide((current) => current - 1);
     }
   };
-  
+
   return (
     <>
-      <main className="h-screen w-screen flex justify-center items-center">
+      <main className="flex h-screen w-screen items-center justify-center">
         <AnimatePresence>
           {slide === 0 && <Slide1 />}
           {slide === 1 && <Slide2 />}
@@ -51,9 +50,13 @@ export default function Home() {
           {slide === 8 && <Slide9 />}
           {slide === 9 && <Slide10 />}
         </AnimatePresence>
-        <Button className="absolute bottom-1 right-1" onClick={nextSlide}>Next</Button>
-        <Button className="absolute bottom-1 left-1" onClick={prevSlide}>Prev</Button>
+        <Button className="absolute bottom-1 right-1" onClick={nextSlide}>
+          Next
+        </Button>
+        <Button className="absolute bottom-1 left-1" onClick={prevSlide}>
+          Prev
+        </Button>
       </main>
     </>
-  )
+  );
 }
