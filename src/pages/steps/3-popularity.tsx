@@ -21,7 +21,7 @@ export default function Slide3() {
       </motion.p>
 
       <div className="text-black mt-3">
-        <Link href={`/steps/5-accuracy`}>
+        <Link href={`/steps/4-risks`}>
           <Button
             className="text-xl transition-all hover:scale-110 active:scale-105 active:bg-slate-300"
             size="lg"
