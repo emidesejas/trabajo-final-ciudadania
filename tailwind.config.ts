@@ -73,6 +73,7 @@ module.exports = {
       },
       backgroundImage: {
         "colorful_background": "url('/colorful_background.jpg')",
+        "tech_background": "url('/background.jpg')",
       },
     },
   },

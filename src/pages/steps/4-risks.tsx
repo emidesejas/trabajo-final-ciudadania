@@ -1,6 +1,10 @@
 import { motion } from "framer-motion"
+import { useRouter } from 'next/router'
 
 export default function Slide4() {
+  const router = useRouter()
+  const { didKnow } = router.query
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -9,7 +13,7 @@ export default function Slide4() {
       className="w-full h-full flex flex-col justify-center items-center gap-3 p-40"
     >
       <h1 className="font-bold text-5xl">
-        ¿Qué riesgos implica su uso?
+        { didKnow ? '¿Sabías que riesgos implica su uso?' :'¿Qué riesgos implica su uso?' }
       </h1>
       <motion.p className="text-4xl mt-7 text-center">
         Chat GPT no razona lógicamente ni tiene inteligencia, sino que predice la siguiente palabra más acorde al contexto y a la pregunta realizada por el usuario.

@@ -38,16 +38,11 @@ const PresentationButtons = () => {
 }
 
 const Layout = ({ children }: { children: ReactNode }) => {
-  const pathname = usePathname();
-
-  console.log("ESTOY EN EL COSO", pathname)
-  const background = pathname === '/slides/1' ? "bg-colorful_background bg-cover" : "";
-
   return (
     <>
       <Header />
-      <main className={`h-screen w-screen flex flex-col justify-center items-center ${background}`}>
-        <div className="grow">
+      <main className={`h-screen w-screen flex flex-col justify-center items-center bg-tech_background bg-cover`}>
+        <div className="grow flex flex-col justify-center items-center">
           {children}
         </div>
         <PresentationButtons />
