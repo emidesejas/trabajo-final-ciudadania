@@ -1,6 +1,5 @@
 import { AnimatePresence } from "framer-motion";
-import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { Button } from "~/components/ui/button";
 import Slide1 from "~/slides/slide-1";
