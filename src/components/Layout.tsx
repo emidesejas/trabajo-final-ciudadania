@@ -1,53 +1,30 @@
 import Head from "next/head";
-import { usePathname } from 'next/navigation'
 import type { ReactNode } from "react";
-import { Button } from "~/components/ui/button";
-import Link from "next/link";
-
-const TOTAL_SLIDES = 10;
+import { ThemeProvider } from "./ui/theme-provider";
 
 const Header = () => (
-  <>
-    <Head>
-      <title>Trabajo final de Ciudadanía - Grupo 40</title>
-      <link rel="icon" href="/sticker.png" />
-    </Head>
-  </>
+  <Head>
+    <title>Trabajo final de Ciudadanía - Grupo 40</title>
+    <link rel="icon" href="/brain-circuit.png" />
+    <meta name="description" content="Trabajo final de Construcción de Ciudadanía en Entornos Digitales - Grupo 40" />
+    <meta content="chatgpt, chat, gpt, inteligencia artificial, artificial intelligence, riesgos, ia, ai, llm" name="keywords" />
+    <meta content="Trabajo final de Construcción de Ciudadanía en Entornos Digitales - Grupo 40" property="og:title" />
+    <meta content="https://trabajo-final-ciudadania.vercel.app/" property="og:url"/>
+    <meta content="article" property="og:type"/>
+    <meta content="Trabajo final de Construcción de Ciudadanía en Entornos Digitales - Grupo 40" property="og:description" />
+  </Head>
 );
 
-const PresentationButtons = () => {
-  const pathname = usePathname()
-
-  const result = pathname.match(/\/slides\/(\d+)/);
-  const currentPage = result ? parseInt(result?.[1] ?? "0") : 0;
-
-  const next = currentPage === TOTAL_SLIDES ? 1 : currentPage + 1;
-  const prev = currentPage === 1 ? TOTAL_SLIDES : currentPage - 1;
-
-  return (
-    result &&
-      <div className="w-full flex justify-between p-4">
-        <Link href={`/slides/${prev}`}>
-          <Button className="" >Prev</Button>
-        </Link>
-        <Link href={`/slides/${next}`}>
-          <Button className="" >Next</Button>
-        </Link>
-      </div>
-  );
-}
-
 const Layout = ({ children }: { children: ReactNode }) => {
-  return (
-    <>
+  return (    
+    <ThemeProvider attribute="class" defaultTheme="dark">
       <Header />
-      <main className={`h-screen w-screen flex flex-col justify-center items-center bg-tech_background bg-cover`}>
+      <main className={`flex flex-col justify-center items-center bg-tech_background bg-cover`}>
         <div className="grow flex flex-col justify-center items-center">
           {children}
         </div>
-        <PresentationButtons />
       </main>
-    </>
+    </ThemeProvider>
   );
 }
 
