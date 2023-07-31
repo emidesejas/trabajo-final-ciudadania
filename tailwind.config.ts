@@ -72,8 +72,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        "colorful_background": "url('/colorful_background.jpg')",
-        "tech_background": "url('/background.jpg')",
+        "tech_background": "url('/background.webp')",
       },
     },
   },
